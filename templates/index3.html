@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stock Predictions Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+<style>
+    header {
+        position: relative;
+        background-color: black;
+        height: 100%;
+        min-height: 15rem;
+        width: 100%;
+        overflow: hidden;
+      }
+      
+      header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+      }
+      
+      header .container {
+        position: relative;
+        z-index: 2;
+      }
+      
+      header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 1;
+      }
+      
+      @media (pointer: coarse) and (hover: none) {
+        header {
+          background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+        }
+        header video {
+          display: none;
+        }
+      }
+      
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+      
+      
+      .container,
+      .first,
+      .second,
+      .contents {
+        position: absolute;
+      }
+      
+      .container {
+        margin: auto;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 170px;
+        height: 50px;
+        transition: all 0.3s ease;
+      }
+      
+      .wrap {
+        width: 100%;
+        height: 70px;
+        border: 2px solid #FFF;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+      }
+      
+      .first {
+        width: 84%;
+        height: 25px;
+        font-family: 'Open Sans', sans-serif;
+        transition: all 0.2s ease-in-out;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #FFF;
+        letter-spacing: 2px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 60px;
+      }
+      
+      .contents{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+      
+     .container:hover {
+        width: 280px;
+      }
+      .container:hover .wrap {
+        padding-bottom: 15px;
+      }
+      .container:hover .first {
+        transform: translateY(-8px);
+        padding-top: 5px;
+      }
+      .container:hover .second {
+        transform: translateY(15px);
+        opacity: 1; 
+      }
+      
+      
+          </style>
+
+</head>
+<body>
+
+    <header>
+
+        <div class="container">
+            <div class="wrap">
+                <a href="/" target="_blank">
+                <div class="first">HOME</div>
+                </a>
+            </div>
+            </div>
+
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="../static/video/stock_video.mp4" type="video/mp4">
+        </video>
+    </header>
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            
+          </div> 
+        </div>
+ 
+              
+      <div class="contents">
+        
+        <div class="col-md-8" id="pie"></div>
+        <div class="col-md-8" id="buysell"></div>
+        <div class="col-md-8" id="line"></div>
+        <div class="col-md-8"></div>
+      </div>
+                
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app2.js')}}"></script>
+
+</body>
+
+</html>
