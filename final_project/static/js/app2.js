@@ -27,20 +27,32 @@ d3.json(url).then(function(response){
   var negative = Number(data["negative"])*100;
   var positive = Number(data["positive"])*100;
   var pie_data = [positive, negative];
+  
+    if (positive > negative) { 
+        buysell = "Buy";
+    }
+      else {
+        buysell= "Sell"
+      };
+   
 
   var pie_trace = {
     values:pie_data,
     labels: ["Positive", "Negative"],
-    type: "pie"
+    type: "pie",
+    title: data["Company_Name"],
+    marker: {
+      colors: ['rgb(0, 0, 204)','rgb(255, 0, 0)']
+    }
   }
 
   var layout = {
-    title: data["Company_Name"],
+    title: buysell
   };
 
 // Need a Visual for the Buy or sell=> Data is in data['prediction']
 
-  Plotly.plot("line", [line_trace], layout);
+  Plotly.plot("line", [line_trace]);
   Plotly.plot("pie", [pie_trace], layout);
 
 })
