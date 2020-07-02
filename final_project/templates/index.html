@@ -22,19 +22,18 @@
         height: 40px;
     }
     #form-buscar >.form-group >.input-group > .input-group-btn > .btn{
-
-            height: 40px; 
+            height: 40px;
             font-size: 16px;
-            font-weight: 300;              
+            font-weight: 300;
     }
 
     #form-buscar >.form-group >.input-group > .input-group-btn > .btn .glyphicon{
-    margin-right:12px;   
-    }    
-      
+    margin-right:12px;
+    }
+
     #form-buscar >.form-group >.input-group > .form-control {
         font-size: 16px;
-        font-weight: 300;   
+        font-weight: 300;
     }
 
     #form-buscar >.form-group >.input-group > .form-control:focus {
@@ -107,15 +106,6 @@
         <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-white">
             <h1 class="display-3">Predict A Stock</h1>
-            <p class="lead mb-0">Type in a Company Name</p>
-        <div class="container" style="margin-top: 5%;">
-            <form role="form" id="form-buscar">
-                <div class="form-group">
-                    <div class="input-group">
-                    <input id="1" class="form-control" type="text" name="search" placeholder="i.e. Ford Motor Company" required/>
-                        <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit" id="button">
-
             <p class="lead mb-0">Type in a Stock Ticker</p>
         <div class="container" style="margin-top: 5%;">
             <form role="form" id="form-buscar" method = "POST" action = "/company">
@@ -124,7 +114,6 @@
                     <input id="1" class="form-control" type="text" name="company" placeholder="Search..." required/>
                         <span class="input-group-btn">
                             <button class="btn btn-success" type="submit">
-
                                 <i class="glyphicon glyphicon-search" aria-hidden="true"></i> Search
                             </button>
                         </span>
@@ -137,6 +126,29 @@
     </div>
 
 
+
+    <!-- <div class="container" style="margin-top: 8%;">
+        <div class="col-md-6 col-md-offset-3">
+        <div class="row">
+        <div id="logo" class="text-center">
+        <h1>This is Logo</h1><p>Slogan of thematic</p>
+        </div>
+        <form role="form" id="form-buscar">
+        <div class="form-group">
+        <div class="input-group">
+        <input id="1" class="form-control" type="text" name="search" placeholder="Search..." required/>
+        <span class="input-group-btn">
+        <button class="btn btn-success" type="submit">
+        <i class="glyphicon glyphicon-search" aria-hidden="true"></i> Search
+        </button>
+        </span>
+        </div>
+        </div>
+        </form>
+        </div>
+        </div>
+        </div>
+       -->
 </body>
 
 </html>
