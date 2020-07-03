@@ -18,7 +18,7 @@ def homepage():
 
 @app.route('/stock')
 def visualizations():
-	return render_template('index2.html')
+	return render_template('index3.html')
 
 
 
