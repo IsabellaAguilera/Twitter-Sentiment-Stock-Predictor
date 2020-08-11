@@ -3,14 +3,6 @@ stopwords
 wordnet
 twitter_samples
 cmudict
-gazetteers
-genesis
-gutenberg
 inaugural
 names
 treebank
-omw
-words
-maxent_ne_chunker
-snowball_data
-averaged_perceptron_tagger
