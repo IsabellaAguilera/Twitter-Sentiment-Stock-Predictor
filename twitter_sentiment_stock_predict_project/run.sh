@@ -1,0 +1,1 @@
+FLASK_APP=twitter_sentiment_stock_predict_project/app.py flask run
