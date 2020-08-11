@@ -2,7 +2,3 @@ punkt
 stopwords
 wordnet
 twitter_samples
-cmudict
-inaugural
-names
-treebank
