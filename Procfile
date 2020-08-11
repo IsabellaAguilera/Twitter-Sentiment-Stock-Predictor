@@ -1,1 +1,1 @@
-web: gunicorn twitterstockapp.app:app
+web: gunicorn app:app
