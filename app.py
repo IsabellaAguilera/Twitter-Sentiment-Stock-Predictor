@@ -28,7 +28,7 @@ def visualizations():
 @app.route('/company', methods=["POST"])
 def data():
 	global company
-	query = {}
+	
 	name = request.form['company']
 	if stock_data.is_valid_company(name):
 		company.append(name)
@@ -40,7 +40,6 @@ def data():
 @app.route("/json_data", methods=["POST", "GET"])
 def json_data():
 	global company
-	global count
 
 	pred = str(prediction.get_Prediction(company[len(company) - 1]))
 
