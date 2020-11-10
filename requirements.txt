@@ -21,7 +21,7 @@ six==1.11.0
 SQLAlchemy==1.1.15
 traitlets==4.3.2
 wcwidth==0.1.7
-Werkzeug==0.12.2
+Werkzeug==0.15.3
 yfinance==0.1.54
 chardet==3.0.4
 idna==2.10
