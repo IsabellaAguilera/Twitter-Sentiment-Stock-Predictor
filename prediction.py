@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import numpy as np
 import tensorflow as tf
-from tf.python.keras.models import load_model
+from tensorflow.python.keras.models import load_model
 import json
 
 def xScaler():
