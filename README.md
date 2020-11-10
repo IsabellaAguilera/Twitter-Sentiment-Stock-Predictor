@@ -1,1 +1,1 @@
-# final-project
+# Twitter Sentiment Stock Predictor
