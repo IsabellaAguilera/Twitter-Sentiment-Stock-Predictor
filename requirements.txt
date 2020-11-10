@@ -44,3 +44,4 @@ nltk==3.5
 cython==0.29.6
 ccompiler==0.2.0
 h5py==2.6.0
+keras==2.2.4
