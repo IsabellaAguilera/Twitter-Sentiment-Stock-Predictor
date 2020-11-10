@@ -28,7 +28,6 @@ chardet==3.0.4
 citipy==0.0.5
 Click==7.0
 cloudpickle==0.8.0
-clyent==1.2.2
 colorama==0.4.1
 conda==4.8.0
 conda-build==3.17.8
