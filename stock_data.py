@@ -1,6 +1,5 @@
 import datetime as dt
 import os
-import pickle
 import pandas as pd
 import yfinance as yf
 import string

@@ -1,7 +1,6 @@
 import twitter_data
 import stock_data
 from twitter_data import data_creator_predict
-import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import numpy as np
