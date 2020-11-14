@@ -1,0 +1,4 @@
+punkt
+stopwords
+wordnet
+twitter_samples
