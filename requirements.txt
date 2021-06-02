@@ -27,7 +27,7 @@ chardet==3.0.4
 idna==2.10
 multitasking==0.0.9
 requests==2.24.0
-urllib3==1.25.10
+urllib3==1.26.5
 tweepy==3.9.0
 PySocks==1.7.1
 oauthlib==3.1.0
